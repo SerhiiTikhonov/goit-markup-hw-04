@@ -99,7 +99,7 @@ body {
   height: 4px;
   background: #404bbf;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .menu-link:hover,
@@ -138,6 +138,8 @@ body {
 /* section hero */
 .hero {
   max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
@@ -194,6 +196,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  padding-top: 8px;
 }
 .skills-item {
   width: calc((100% - 72px) / 4);
@@ -208,6 +211,16 @@ body {
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+.skills-list-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
 }
 
 /* section our team */
@@ -228,6 +241,7 @@ body {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
 .person-team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -251,9 +265,24 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 8px;
 }
 .person-container {
-  padding: 32px 0;
+  padding: 32px 15px;
+}
+.social-icon {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-list-icon {
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  stroke: #f4f4fd;
+  width: 40px;
+  height: 40px;
 }
 /* section our portfolio */
 .possibility {
@@ -280,6 +309,27 @@ body {
   border: 1px solid #e7e9fc;
   background: #fff;
   width: calc((100% - 48px) / 3);
+}
+.possibility-images-container {
+  position: relative;
+  overflow: hidden;
+}
+.possibility-images-overlay {
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  padding: 40px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.possibility-images-container:hover .possibility-images-overlay {
+  transform: translateY(0);
 }
 .possibility-container {
   padding: 32px 16px;
