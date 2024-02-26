@@ -281,7 +281,7 @@ body {
   padding-bottom: 8px;
 }
 .person-container {
-  padding: 32px 15px;
+  padding: 32px 0;
 }
 .social-icon {
   display: flex;
