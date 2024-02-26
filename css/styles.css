@@ -247,7 +247,6 @@ body {
 .social-person-list {
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link {
@@ -258,6 +257,7 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover,
@@ -337,6 +337,7 @@ body {
   border: 1px solid #e7e9fc;
   background: #fff;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .possibility-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
