@@ -279,7 +279,7 @@ body {
 .social-list-icon {
   border-radius: 50%;
   background-color: #4d5ae5;
-  fill: #f4f4fd;
+  fill: none;
   stroke: #f4f4fd;
   width: 40px;
   height: 40px;
@@ -354,8 +354,11 @@ body {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-
+.footer-container {
+  display: flex;
+}
 .lower-link {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -371,9 +374,21 @@ body {
   color: #f4f4fd;
 }
 .lower-text {
+  display: block;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
+}
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.social-icon-footer {
+  display: flex;
+  width: 208px;
 }
