@@ -152,6 +152,9 @@ body {
     ),
     url(../images/hero/hero_image.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-title {
@@ -200,7 +203,6 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  padding-top: 8px;
 }
 .skills-item {
   width: calc((100% - 72px) / 4);
@@ -225,6 +227,7 @@ body {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
 
 /* section our team */
