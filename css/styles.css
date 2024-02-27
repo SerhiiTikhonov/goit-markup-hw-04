@@ -392,6 +392,8 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+}
+.container-link {
   margin-right: 120px;
 }
 .lower-link {
@@ -423,7 +425,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 .social-icon-footer {
   display: flex;
