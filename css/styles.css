@@ -362,7 +362,7 @@ body {
   padding: 40px 32px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.possibility-images-container:hover .possibility-images-overlay {
+.possibility-images-overlay:hover {
   transform: translateY(0);
 }
 
